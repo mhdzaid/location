@@ -1,0 +1,20 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/location
+    username: location
+    password: location
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    database: POSTGRESQL
+    #    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  flyway:
+    url: jdbc:postgresql://localhost:5433/jitpaydb
+    schemas: public
+    user: location
+    password: location
+    locations: classpath:db/migration
