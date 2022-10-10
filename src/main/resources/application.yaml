@@ -13,8 +13,11 @@ spring:
       ddl-auto: none
 
   flyway:
-    url: jdbc:postgresql://localhost:5433/jitpaydb
+    url: jdbc:postgresql://localhost:5433/location
     schemas: public
     user: location
     password: location
     locations: classpath:db/migration
+
+server:
+  port: 8081
