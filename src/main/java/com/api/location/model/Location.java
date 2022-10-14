@@ -1,4 +1,4 @@
-package com.api.jitpay.location.model;
+package com.api.location.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

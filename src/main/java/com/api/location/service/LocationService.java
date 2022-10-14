@@ -1,7 +1,7 @@
-package com.api.jitpay.location.service;
+package com.api.location.service;
 
-import com.api.jitpay.location.dto.LocationCreationRequest;
-import com.api.jitpay.location.model.Location;
+import com.api.location.dto.LocationCreationRequest;
+import com.api.location.model.Location;
 
 import java.util.UUID;
 

@@ -1,7 +1,7 @@
-package com.api.jitpay.location.mapper;
+package com.api.location.mapper;
 
-import com.api.jitpay.location.dto.LocationCreationRequest;
-import com.api.jitpay.location.model.Location;
+import com.api.location.dto.LocationCreationRequest;
+import com.api.location.model.Location;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

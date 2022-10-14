@@ -1,11 +1,10 @@
-package com.api.jitpay.location.dto;
+package com.api.location.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -13,11 +12,17 @@ import java.util.UUID;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class LocationCreationRequest implements Serializable
+public class UserLatestLocationResponse
 {
     private UUID userId;
 
     private LocalDateTime createdOn;
 
-    private LocationDTO location;
+    private String email;
+
+    private String firstName;
+
+    private String secondName;
+
+    LocationDTO location;
 }

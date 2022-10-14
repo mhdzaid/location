@@ -1,6 +1,6 @@
-package com.api.jitpay.location.repository;
+package com.api.location.repository;
 
-import com.api.jitpay.location.model.Location;
+import com.api.location.model.Location;
 
 import java.util.UUID;
 

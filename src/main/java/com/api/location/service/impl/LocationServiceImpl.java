@@ -1,10 +1,10 @@
-package com.api.jitpay.location.service.impl;
+package com.api.location.service.impl;
 
-import com.api.jitpay.location.dto.LocationCreationRequest;
-import com.api.jitpay.location.mapper.LocationMapper;
-import com.api.jitpay.location.model.Location;
-import com.api.jitpay.location.repository.LocationRepository;
-import com.api.jitpay.location.service.LocationService;
+import com.api.location.dto.LocationCreationRequest;
+import com.api.location.mapper.LocationMapper;
+import com.api.location.model.Location;
+import com.api.location.repository.LocationRepository;
+import com.api.location.service.LocationService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

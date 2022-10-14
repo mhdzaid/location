@@ -1,4 +1,7 @@
 spring:
+  application:
+    name:
+      location-client
   main:
     allow-bean-definition-overriding: true
   datasource:
@@ -20,4 +23,11 @@ spring:
     locations: classpath:db/migration
 
 server:
-  port: 8081
+  port: 0
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true

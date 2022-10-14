@@ -1,4 +1,4 @@
-package com.api.jitpay.location.dto;
+package com.api.location.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

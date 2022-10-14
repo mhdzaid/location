@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.api</groupId>
-	<artifactId>jitpay</artifactId>
+	<artifactId>location</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jitpay</name>
 	<description>Demo project for Spring Boot</description>
@@ -79,12 +79,6 @@
 			<version>${eureka-client.version}</version>
 		</dependency>
 
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway</artifactId>
-			<version>${starter-gateway.version}</version>
-		</dependency>
 
 
 	</dependencies>

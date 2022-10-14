@@ -1,7 +1,7 @@
-package com.api.jitpay.location.repository.impl;
+package com.api.location.repository.impl;
 
-import com.api.jitpay.location.model.Location;
-import com.api.jitpay.location.repository.LocationRepository;
+import com.api.location.model.Location;
+import com.api.location.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

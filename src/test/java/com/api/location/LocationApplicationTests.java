@@ -1,10 +1,10 @@
-package com.api.jitpay;
+package com.api.location;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JitpayApplicationTests {
+class LocationApplicationTests {
 
 	@Test
 	void contextLoads() {

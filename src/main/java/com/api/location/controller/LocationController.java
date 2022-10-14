@@ -1,11 +1,16 @@
-package com.api.jitpay.location.controller;
+package com.api.location.controller;
 
-import com.api.jitpay.location.dto.LocationCreationRequest;
-import com.api.jitpay.location.service.LocationService;
+import com.api.location.dto.LocationCreationRequest;
+import com.api.location.service.LocationService;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
@@ -15,10 +20,20 @@ public class LocationController
 
 //    private final UserLocationClient locationClient;
 
-    @PostMapping("/api/user/{userId}/location")
+    @Autowired
+    private ServerProperties serverProperties;
+
+    @PostMapping("/api/location/user/{userId}")
     public ResponseEntity<Void> createLocation(@PathVariable String userId, @RequestBody LocationCreationRequest request)
     {
         locationService.createLocation(request);
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/api/location/user/{userId}")
+    public ResponseEntity<Void> test(@PathVariable String userId)
+    {
+        log.info("This is port :{}", serverProperties.getPort());
         return ResponseEntity.ok().build();
     }
 
