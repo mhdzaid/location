@@ -1,4 +1,4 @@
-package com.api.location.model;
+package com.api.locationwriter.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

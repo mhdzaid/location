@@ -1,7 +1,7 @@
-package com.api.location.service;
+package com.api.locationwriter.service;
 
-import com.api.location.dto.LocationCreationRequest;
-import com.api.location.model.Location;
+import com.api.locationwriter.dto.LocationCreationRequest;
+import com.api.locationwriter.model.Location;
 
 import java.util.UUID;
 

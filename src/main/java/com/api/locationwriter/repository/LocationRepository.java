@@ -1,6 +1,6 @@
-package com.api.location.repository;
+package com.api.locationwriter.repository;
 
-import com.api.location.model.Location;
+import com.api.locationwriter.model.Location;
 
 import java.util.UUID;
 

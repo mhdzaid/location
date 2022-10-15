@@ -1,4 +1,4 @@
-package com.api.location;
+package com.api.locationwriter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

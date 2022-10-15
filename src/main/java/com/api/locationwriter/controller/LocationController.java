@@ -1,9 +1,8 @@
-package com.api.location.controller;
+package com.api.locationwriter.controller;
 
-import com.api.location.dto.LocationCreationRequest;
-import com.api.location.service.LocationService;
+import com.api.locationwriter.dto.LocationCreationRequest;
+import com.api.locationwriter.service.LocationService;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ServerProperties;

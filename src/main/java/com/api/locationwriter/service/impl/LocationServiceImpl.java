@@ -1,10 +1,10 @@
-package com.api.location.service.impl;
+package com.api.locationwriter.service.impl;
 
-import com.api.location.dto.LocationCreationRequest;
-import com.api.location.mapper.LocationMapper;
-import com.api.location.model.Location;
-import com.api.location.repository.LocationRepository;
-import com.api.location.service.LocationService;
+import com.api.locationwriter.dto.LocationCreationRequest;
+import com.api.locationwriter.mapper.LocationMapper;
+import com.api.locationwriter.model.Location;
+import com.api.locationwriter.repository.LocationRepository;
+import com.api.locationwriter.service.LocationService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

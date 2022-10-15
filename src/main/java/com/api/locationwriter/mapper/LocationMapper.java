@@ -1,7 +1,7 @@
-package com.api.location.mapper;
+package com.api.locationwriter.mapper;
 
-import com.api.location.dto.LocationCreationRequest;
-import com.api.location.model.Location;
+import com.api.locationwriter.dto.LocationCreationRequest;
+import com.api.locationwriter.model.Location;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

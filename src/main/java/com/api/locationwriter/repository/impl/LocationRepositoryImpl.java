@@ -1,7 +1,7 @@
-package com.api.location.repository.impl;
+package com.api.locationwriter.repository.impl;
 
-import com.api.location.model.Location;
-import com.api.location.repository.LocationRepository;
+import com.api.locationwriter.model.Location;
+import com.api.locationwriter.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

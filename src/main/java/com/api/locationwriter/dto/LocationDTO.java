@@ -1,4 +1,4 @@
-package com.api.location.dto;
+package com.api.locationwriter.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
