@@ -26,10 +26,4 @@ public class LocationServiceImpl implements LocationService
         Location location = locationMapper.locationRequestToLocation(request);
         locationRepository.createLocation(location);
     }
-
-    @Override
-    public Location getLatestLocationOfUser(UUID userId)
-    {
-        return locationRepository.getLatestLocationOfUser(userId);
-    }
 }

@@ -18,9 +18,7 @@ import java.util.UUID;
 public class Location implements Serializable
 {
     @Id
-    @org.springframework.data.annotation.Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(name = "latitude")

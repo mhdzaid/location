@@ -1,7 +1,7 @@
 spring:
   application:
     name:
-      location-client
+      location-writer-client
   main:
     allow-bean-definition-overriding: true
   datasource:

@@ -8,5 +8,4 @@ public interface LocationRepository
 {
     void createLocation(Location location);
 
-    Location getLatestLocationOfUser(UUID userId);
 }

@@ -1,6 +1,6 @@
 version: '2'
 services:
-  location-db:
+  location-writer-db:
     image: postgres:12
     environment:
       POSTGRES_USER: location
@@ -9,9 +9,9 @@ services:
     ports:
       - 5433:5432
     volumes:
-      - data_location:/var/lib/postgresql/data
+      - data_location_writer:/var/lib/postgresql/data
 
 volumes:
-  data_location:
+  data_location_writer:
     driver: local
 

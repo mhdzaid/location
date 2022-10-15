@@ -8,6 +8,4 @@ import java.util.UUID;
 public interface LocationService
 {
     void createLocation(LocationCreationRequest request);
-
-    Location getLatestLocationOfUser(UUID userId);
 }
