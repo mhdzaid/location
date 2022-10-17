@@ -19,6 +19,8 @@
 		<postgresql.version>42.2.5</postgresql.version>
 		<eureka-client.version>3.1.4</eureka-client.version>
 		<starter-gateway.version>3.1.4</starter-gateway.version>
+		<debezium.version>1.4.2.Final</debezium.version>
+		<apache-commons-lang3.version>3.12.0</apache-commons-lang3.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -81,11 +83,29 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>2.6.7</version>
         </dependency>
 
+		<dependency>
+			<groupId>io.debezium</groupId>
+			<artifactId>debezium-api</artifactId>
+			<version>${debezium.version}</version>
+		</dependency>
 
-    </dependencies>
+		<dependency>
+			<groupId>io.debezium</groupId>
+			<artifactId>debezium-embedded</artifactId>
+			<version>${debezium.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache-commons-lang3.version}</version>
+		</dependency>
+
+
+
+	</dependencies>
 
 	<build>
 		<plugins>

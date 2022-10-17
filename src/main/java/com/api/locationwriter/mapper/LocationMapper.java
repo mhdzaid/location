@@ -9,5 +9,4 @@ public interface LocationMapper
 {
     Location locationRequestToLocation(LocationCreationRequest locationCreationRequest);
 
-//    UserLatestLocationResponse locationAndUserToLatestLocation(User user, Location location);
 }

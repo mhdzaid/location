@@ -32,6 +32,12 @@ eureka:
     registerWithEureka: true
 
 location:
+  datasource:
+    host: localhost
+    port: 5433
+    database: location
+    username: location
+    password: location
   kafka:
     bootstrap-server: ${KAFKA_HOST:localhost}:${KAFKA_PORT:9092}
     location-topic: location

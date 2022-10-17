@@ -25,6 +25,10 @@ public class KafkaProducerConfig
     private final LocationProperties locationProperties;
     private final ObjectMapper objectMapper;
 
+    /**
+     * Producer factory for Serialization of Location
+     * @return
+     */
     @Bean
     public ProducerFactory<String, Location> producerFactory()
     {
@@ -33,19 +37,26 @@ public class KafkaProducerConfig
                 kafkaMessageSerializer());
     }
 
+    /**
+     * Configuring kafka bootstrap server for producer
+     * @return
+     */
     @Bean
     public Map<String, Object> producerConfigs()
     {
         String bootstrapServer = locationProperties.getKafka().getBootstrapServer();
-
         Map<String, Object> props = new HashMap<>();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServer);
         return props;
     }
 
 
+    /**
+     * Config for kafkaTemplate handling location
+     * @return
+     */
     @Bean
-    public KafkaTemplate<String, Location> appointmentKafkaTemplate()
+    public KafkaTemplate<String, Location> locationKafkaTemplate()
     {
         KafkaTemplate<String, Location> kafkaTemplate =  new KafkaTemplate<>(producerFactory());
         return kafkaTemplate;
