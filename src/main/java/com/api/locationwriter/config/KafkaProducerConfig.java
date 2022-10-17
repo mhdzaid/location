@@ -20,7 +20,7 @@ import java.util.Map;
 
 @Configuration
 @RequiredArgsConstructor
-public class KafkaConfig
+public class KafkaProducerConfig
 {
     private final LocationProperties locationProperties;
     private final ObjectMapper objectMapper;
