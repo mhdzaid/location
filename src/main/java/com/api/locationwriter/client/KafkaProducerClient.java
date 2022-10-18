@@ -6,13 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;
-import io.debezium.data.Envelope.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 @Slf4j
@@ -49,15 +47,4 @@ public class KafkaProducerClient
 
     }
 
-    /**
-     * Receives Debezium event and sends to kafka topic
-     * @param customerData
-     * @param operation
-     */
-    public void replicateData(Map<String, Object> customerData, Operation operation)
-    {
-        final Location location = mapper.convertValue(customerData, Location.class);
-        if (Operation.CREATE != operation)
-            sendMessage(location);
-    }
 }

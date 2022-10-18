@@ -8,6 +8,10 @@ services:
 #      POSTGRES_DB: jitpaydb
     ports:
       - 5433:5432
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
     volumes:
       - data_location_writer:/var/lib/postgresql/data
 

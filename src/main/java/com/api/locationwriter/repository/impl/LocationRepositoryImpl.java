@@ -19,7 +19,7 @@ public class LocationRepositoryImpl implements LocationRepository
     public void createLocation(Location location)
     {
         jdbcTemplate.update("insert into location " +
-                "(latitude, longitude, created_on, userId) VALUES (?, ?, ?, ?) ;",
+                "(latitude, longitude, created_on, user_id) VALUES (?, ?, ?, ?) ;",
                   location.getLatitude(), location.getLongitude(), location.getCreatedOn(), location.getUserId());
 
     }
