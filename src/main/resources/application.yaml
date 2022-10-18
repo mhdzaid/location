@@ -5,7 +5,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:postgresql://localhost:5433/location
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5433}/location
     username: location
     password: location
   jpa:
@@ -15,7 +15,7 @@ spring:
     hibernate:
       ddl-auto: none
   flyway:
-    url: jdbc:postgresql://localhost:5433/location
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5433}/location
     schemas: public
     user: location
     password: location
@@ -38,9 +38,9 @@ location:
     queue-capacity: 10000
   datasource:
     host:
-      localhost
+      ${DATABASE_HOST:localhost}
     port:
-      5433
+      ${DATABASE_PORT:5433}
     database:
       location
     username:

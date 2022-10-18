@@ -63,12 +63,20 @@ public class KafkaProducerConfig
         return kafkaTemplate;
     }
 
+    /**
+     * Registering String Serializer for kafka producer
+     * @return
+     */
     @Bean
     public Serializer stringKeySerializer()
     {
         return new StringSerializer();
     }
 
+    /**
+     * Registering JsonSerializer for kafka producer
+     * @return
+     */
     @Bean
     public Serializer kafkaMessageSerializer()
     {

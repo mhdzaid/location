@@ -2,7 +2,6 @@ package com.api.locationwriter.client;
 
 import com.api.locationwriter.model.Location;
 import com.api.locationwriter.util.LocationProperties;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;
@@ -24,8 +23,6 @@ public class KafkaProducerClient
     @Autowired
     private KafkaTemplate<String, Location> kafkaTemplate;
 
-    @Autowired
-    private final ObjectMapper mapper = new ObjectMapper();
 
     /**
      * Sends location information to location-read microservice

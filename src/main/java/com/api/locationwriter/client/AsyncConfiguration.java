@@ -18,6 +18,10 @@ import java.util.concurrent.Executor;
 public class AsyncConfiguration implements AsyncConfigurer {
     private final LocationProperties applicationProperties;
 
+    /**
+     * Configuration for Async tasks
+     * @return
+     */
     @Override
     public Executor getAsyncExecutor()
     {

@@ -15,6 +15,12 @@ public class LocationController
 {
     private final LocationService locationService;
 
+    /**
+     * API to create location.
+     * @param userId
+     * @param request
+     * @return
+     */
     @PostMapping("/api/location/user/{userId}")
     public ResponseEntity<Void> createLocation(@PathVariable String userId, @RequestBody LocationCreationRequest request)
     {

@@ -4,15 +4,11 @@ import com.api.locationwriter.dto.LocationCreationRequest;
 import com.api.locationwriter.listener.LocationEventListener;
 import com.api.locationwriter.mapper.LocationMapper;
 import com.api.locationwriter.model.Location;
-import com.api.locationwriter.publisher.LocationEventPublisher;
 import com.api.locationwriter.repository.LocationRepository;
 import com.api.locationwriter.service.LocationService;
 import lombok.AllArgsConstructor;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.UUID;
 
 @Service
 @AllArgsConstructor
@@ -25,6 +21,10 @@ public class LocationServiceImpl implements LocationService
 
     private final LocationEventListener locationEventListener;
 
+    /**
+     * Creates location object as well as sends a Asyc event to send a kafka request to location-reader microservice.
+     * @param request
+     */
     @Override
     public void createLocation(LocationCreationRequest request)
     {

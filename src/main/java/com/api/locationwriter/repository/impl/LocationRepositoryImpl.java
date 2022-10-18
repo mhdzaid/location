@@ -15,6 +15,10 @@ public class LocationRepositoryImpl implements LocationRepository
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    /**
+     * Using jdbcTemplate instead of hibernate to make it faster
+     * @param location
+     */
     @Override
     public void createLocation(Location location)
     {
